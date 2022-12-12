@@ -10,8 +10,10 @@
   </head>
   <body>
     <script>
-      const age = window.prompt(`Please Enter your age Santosh`);
-      const isOldEnough = age >= 18;
+      var age = window.prompt(`Please Enter your age Santosh`);
+      age = parseInt(age);
+
+      var isOldEnough = age >= 18;
 
       if (isOldEnough) {
         alert(`Santosh can start driving licence 🚗`);
@@ -19,11 +21,13 @@
         alert(`Santosh can not start driving licence🚫`);
       }
 
-      const age1 = window.prompt(`Please Enter your age Viarg`);
+      var age1 = window.prompt(`Please Enter your age Viarg`);
+      age1 = parseInt(age1);
+
       if (age1 >= 18) {
         alert(`Virag can start driving licence🚗`);
       } else {
-        const yearsLeft = 18 - age1;
+        var yearsLeft = 18 - age1;
         alert(`Virag is too young. Wait another ${yearsLeft} years!🚫`);
       }
 
