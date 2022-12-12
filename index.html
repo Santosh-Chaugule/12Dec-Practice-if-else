@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taking Decision:If-else statement</title>
+    <style></style>
+    <script></script>
+  </head>
+  <body>
+    <script>
+      const age = window.prompt(`Please Enter your age Santosh`);
+      const isOldEnough = age >= 18;
+
+      if (isOldEnough) {
+        alert(`Santosh can start driving licence 🚗`);
+      } else {
+        alert(`Santosh can not start driving licence🚫`);
+      }
+
+      const age1 = window.prompt(`Please Enter your age Viarg`);
+      if (age1 >= 18) {
+        alert(`Virag can start driving licence🚗`);
+      } else {
+        const yearsLeft = 18 - age1;
+        alert(`Virag is too young. Wait another ${yearsLeft} years!🚫`);
+      }
+
+      const birthYear = 2012;
+      let century;
+      if (birthYear <= 2000) {
+        century = 20;
+      } else {
+        century = 21;
+      }
+      console.log(century);
+    </script>
+  </body>
+</html>
